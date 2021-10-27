@@ -21,7 +21,7 @@ from PIL import Image
 from database.database import *
 
 
-@MaI_BoTs.on_message(filters.photo)
+@Z_Bots.on_message(filters.photo)
 async def save_photo(bot, update):
     if update.from_user.id in Config.BANNED_USERS:
         await bot.delete_messages(
